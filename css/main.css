@@ -24,10 +24,12 @@ img {
 body {
   margin: 0;
 }
+
 .photo:first-child {
   display: inline-block;
   width: 100%;
 }
+
 .photo:nth-child(2) {
   display: none;
 }
@@ -45,7 +47,7 @@ section {
 @media only screen and (min-width: 25em) {
 
   .photo:nth-child(2) {
-    display:block;
+    display: block;
   }
 
   .photo:last-child {
@@ -61,6 +63,24 @@ section {
 
 @media only screen and (min-width: 38em) {
 
+  .photo:nth-child(5) {
+    display: none;
+  }
 
+  .photo:nth-child(n+2) {
+    width: 33.3333%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .photo:first-child {
+    width: 66.6666%;
+  }
+
+  .photo:last-child {
+    display: block;
+  }
 
 }
